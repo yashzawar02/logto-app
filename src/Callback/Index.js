@@ -6,6 +6,7 @@ const Callback = () => {
 	const navigate = useNavigate();
 	const { isLoading } = useHandleSignInCallback(() => {
 		// upon success, redirect to dashboard
+		console.log('Inside useHandleSignInCallback - success');
 		navigate('/');
 	});
 

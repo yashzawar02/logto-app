@@ -10,6 +10,7 @@ const Home = () => {
 	useEffect(() => {
 		(async () => {
 			if (isAuthenticated) {
+				console.log(`User authenticate? : ${isAuthenticated}`);
 				const userInfo = await fetchUserInfo();
 				setUser(userInfo);
 			}
