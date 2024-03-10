@@ -37,7 +37,7 @@ const Home = () => {
 					<button
 						type="button"
 						onClick={() => {
-							void signOut(`${baseUrl}/logto-app`);
+							void signOut(`${baseUrl}`);
 						}}
 					>
 						Sign out

@@ -5,7 +5,7 @@ import Spinner from '../Spinner';
 const Callback = () => {
 	const navigate = useNavigate();
 	const { isLoading } = useHandleSignInCallback(() => {
-		// upon success, redirect to sign-in page
+		// upon success, redirect to dashboard
 		navigate('/logto-app');
 	});
 
