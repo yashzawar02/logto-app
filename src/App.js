@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { LogtoProvider, UserScope } from '@logto/react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import { appId, endpoint } from './constants';
+import Callback from './Callback/Index';
+import Home from './Home/Index';
+
+const App = () => {
+	const config = {
+		appId,
+		endpoint,
+		scopes: [UserScope.Email, UserScope.Phone, UserScope.CustomData],
+	};
+
+	return (
+		<BrowserRouter>
+			<LogtoProvider config={config}>
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/callback" element={<Callback />} />
+				</Routes>
+			</LogtoProvider>
+		</BrowserRouter>
+	);
+};
 
 export default App;
