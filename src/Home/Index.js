@@ -1,7 +1,7 @@
 import { useLogto } from '@logto/react';
 import { useEffect, useState } from 'react';
 import { baseUrl, redirectUrl } from '../constants';
-import './styles.css';
+import '../styles.css';
 
 const Home = () => {
 	const { isAuthenticated, signIn, signOut, fetchUserInfo } = useLogto();
@@ -20,7 +20,7 @@ const Home = () => {
 		<div className="container">
 			{!isAuthenticated && (
 				<div className="button-container">
-					<h3>Please click on Sign in to continue...</h3>
+					<h3>Please sign in to continue...</h3>
 					<button
 						type="button"
 						onClick={() => {
@@ -33,7 +33,7 @@ const Home = () => {
 			)}
 			{isAuthenticated && (
 				<div className="button-container">
-					<h3>You are successfully logged in to your account.</h3>
+					<h3>You have successfully logged in to your account.</h3>
 					<button
 						type="button"
 						onClick={() => {
