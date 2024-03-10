@@ -13,11 +13,11 @@ const App = () => {
 	};
 
 	return (
-		<BrowserRouter>
+		<BrowserRouter basename="/logto-app">
 			<LogtoProvider config={config}>
 				<Routes>
-					<Route path="/logto-app" element={<Home />} />
-					<Route path="/logto-app/callback" element={<Callback />} />
+					<Route path="/" element={<Home />} />
+					<Route path="/callback" element={<Callback />} />
 				</Routes>
 			</LogtoProvider>
 		</BrowserRouter>
