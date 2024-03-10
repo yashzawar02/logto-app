@@ -1,1 +1,1 @@
-# sample-logto-app
+# logto-app
