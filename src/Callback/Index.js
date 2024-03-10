@@ -6,7 +6,7 @@ const Callback = () => {
 	const navigate = useNavigate();
 	const { isLoading } = useHandleSignInCallback(() => {
 		// upon success, redirect to sign-in page
-		navigate('/');
+		navigate('/logto-app');
 	});
 
 	return isLoading ? (
