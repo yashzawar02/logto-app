@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/logto-app/static/css/main.ac62f8b5.css",
-    "main.js": "/logto-app/static/js/main.3d48fd03.js",
+    "main.js": "/logto-app/static/js/main.60941afb.js",
     "index.html": "/logto-app/index.html",
     "main.ac62f8b5.css.map": "/logto-app/static/css/main.ac62f8b5.css.map",
-    "main.3d48fd03.js.map": "/logto-app/static/js/main.3d48fd03.js.map"
+    "main.60941afb.js.map": "/logto-app/static/js/main.60941afb.js.map"
   },
   "entrypoints": [
     "static/css/main.ac62f8b5.css",
-    "static/js/main.3d48fd03.js"
+    "static/js/main.60941afb.js"
   ]
 }
