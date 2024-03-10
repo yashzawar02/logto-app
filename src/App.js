@@ -16,8 +16,8 @@ const App = () => {
 		<BrowserRouter>
 			<LogtoProvider config={config}>
 				<Routes>
-					<Route path="/" element={<Home />} />
-					<Route path="/callback" element={<Callback />} />
+					<Route path="/logto-app" element={<Home />} />
+					<Route path="/logto-app/callback" element={<Callback />} />
 				</Routes>
 			</LogtoProvider>
 		</BrowserRouter>

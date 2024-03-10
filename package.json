@@ -1,8 +1,8 @@
 {
+  "homepage": "https://yashzawar02.github.io/logto-app/",
   "name": "sample-logto-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://yashzawar02.github.io/logto-app/",
   "author": "yash.zawar@ril.com",
   "dependencies": {
     "@logto/react": "^3.0.0",

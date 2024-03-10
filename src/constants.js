@@ -1,5 +1,5 @@
 export const baseUrl = window.location.origin;
-export const redirectUrl = `${baseUrl}/callback`;
+export const redirectUrl = `${baseUrl}/logto-app/callback`;
 
 // Application credentials, after registering an app on logto
 export const appId = 'db2tye40hb3cc14jwr56g';
